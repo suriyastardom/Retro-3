@@ -11,7 +11,7 @@
 
 body {
     font-family: 'CustomFont', Arial, sans-serif;
-    color: #fff;
+    color: #FFE4B2;
     background: linear-gradient(135deg, #1a1a1a, #333); /* Dark gradient background */
     overflow-x: hidden;
 }
