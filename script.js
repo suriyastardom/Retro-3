@@ -24,32 +24,23 @@ background.onload = person.onload = function() {
 };
 
 function drawImage(name = "YOUR NAME") {
-    // Clear the canvas before drawing
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Adjust canvas size based on screen width
-    const screenWidth = window.innerWidth;
-    let canvasWidth = 1500;
-    let canvasHeight = 500
-}
-    canvas.width = canvasWidth;
-    canvas.height = canvasHeight;
+    canvas.width = 1920;
+    canvas.height = 1080;
 
     // 1. Draw Background
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-    // 2. Set up text properties (scale font size for mobile)
-    const fontSize = screenWidth < 768 ? 80 : 120; // Smaller font for mobile
-    ctx.font = `${fontSize}px CustomFont`; // Use custom font
+    // 2. Set up text properties
+    ctx.font = "160px CustomFont"; // Use custom font
     ctx.fillStyle = "#D6D0AC";
     ctx.textAlign = "center";
     ctx.strokeStyle = "#D6D0AC";
-    ctx.lineWidth = screenWidth < 768 ? 3 : 5; // Smaller outline for mobile
+    ctx.lineWidth = 5;
 
     // 3. Position text (centered with 0.5cm gap from top)
-    const gapInPixels = (2.0 / 2.5) * 85;  // Convert 0.5 cm to pixels (≈19px)
+    const gapInPixels = (2.5 / 2.54) * 96;  // Convert 0.5 cm to pixels (≈19px)
     const textX = canvas.width / 2;
-    const textY = gapInPixels + fontSize; // Adjust based on font size
+    const textY = gapInPixels + 160; // Add font height
 
     // 4. Draw Text with Outline for Visibility
     ctx.strokeText(name, textX, textY);
@@ -58,13 +49,8 @@ function drawImage(name = "YOUR NAME") {
     // 5. Draw Person Image (on Top of the Text)
     ctx.drawImage(person, 0, 0, person.width, person.height);
 
-    // Add animation to canvas
-    canvas.classList.add("fade-in");
-
-    // Show the download button after generating the poster
-    document.getElementById("downloadBtn").style.display = "block";
+    document.getElementById("downloadBtn").style.display = "block"; // Show Download Button
 }
-
 function generateImage() {
     let name = document.getElementById("nameInput").value.trim();
     if (name === "") {
