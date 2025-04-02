@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('background.jpg') no-repeat center center/cover; /* Ensure the background covers the entire section */
+    background: url('background.jpg') no-repeat center center/cover; /* Use the same background as the poster */
     padding: 40px 20px;
 }
 
@@ -43,19 +43,6 @@ body {
     text-align: center;
     max-width: 1200px;
     padding: 20px;
-}
-
-/* Person Image Centering */
-.person-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.person-image img {
-    max-width: 100%; /* Ensure the image scales down */
-    height: auto; /* Maintain aspect ratio */
 }
 
 /* Title Animation */
@@ -239,16 +226,10 @@ h2 {
 
     .hero-section {
         padding: 20px 10px; /* Less padding on mobile */
-        background-size: cover; /* Ensure the background covers the entire section on mobile */
     }
 
     .container {
         padding: 10px; /* Less padding on mobile */
-    }
-
-    .person-image img {
-        width: 100%; /* Ensure the image width is 100% on mobile */
-        height: auto; /* Maintain aspect ratio */
     }
 }
 
