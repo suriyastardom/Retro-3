@@ -83,7 +83,7 @@ function generateImage() {
 // Download Image
 function downloadImage() {
     const link = document.createElement("a");
-    link.download = "suriya-stardom-poster.jpg";
+    link.download = "suriya-stardom-coverpic.jpg";
     link.href = canvas.toDataURL("image/jpeg");
     link.click();
 }
