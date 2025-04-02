@@ -39,7 +39,9 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    max-width: 1200px;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
     padding: 20px;
 }
 
@@ -138,7 +140,7 @@ h2 {
     width: 100%;
     max-width: 1500px;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* Download Button Styling */
@@ -170,4 +172,104 @@ h2 {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    h1.animate-title {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    hr {
+        width: 200px; /* Smaller HR on mobile */
+    }
+
+    .intro-text {
+        font-size: 1rem; /* Smaller intro text on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    p {
+        font-size: 0.9rem; /* Smaller paragraph text on mobile */
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px;
+    }
+
+    .name-input {
+        width: 100%; /* Full width input on mobile */
+        font-size: 1rem;
+    }
+
+    .btngenerate {
+        width: 100%; /* Full width button on mobile */
+        font-size: 1rem;
+    }
+
+    .btnfollow {
+        width: 100%; /* Full width follow button on mobile */
+        font-size: 1rem;
+    }
+
+    .canvas {
+        width: 100vw; /* Full width canvas on mobile */
+        height: auto;
+        oject-fit: contain;
+    }
+
+    #downloadBtn {
+        width: 100%; /* Full width download button on mobile */
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        padding: 20px 10px; /* Less padding on mobile */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1.animate-title {
+        font-size: 2rem; /* Even smaller title on very small screens */
+    }
+
+    hr {
+        width: 150px; /* Even smaller HR on very small screens */
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .name-input {
+        padding: 10px;
+    }
+
+    .btngenerate {
+        padding: 10px;
+    }
+
+    .btnfollow {
+        padding: 10px;
+    }
+
+    #downloadBtn {
+        padding: 10px;
+    }
 }
