@@ -31,16 +31,16 @@ function drawImage(name = "YOUR NAME") {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
     // 2. Set up text properties
-    ctx.font = "160px CustomFont"; // Use custom font
+    ctx.font = "85px CustomFont"; // Use custom font
     ctx.fillStyle = "#D6D0AC";
     ctx.textAlign = "center";
     ctx.strokeStyle = "#D6D0AC";
     ctx.lineWidth = 5;
 
     // 3. Position text (centered with 0.5cm gap from top)
-    const gapInPixels = (2.5 / 2.54) * 96;  // Convert 0.5 cm to pixels (≈19px)
+    const gapInPixels = (2.0 / 2.5) * 96;  // Convert 0.5 cm to pixels (≈19px)
     const textX = canvas.width / 2;
-    const textY = gapInPixels + 160; // Add font height
+    const textY = gapInPixels + 85; // Add font height
 
     // 4. Draw Text with Outline for Visibility
     ctx.strokeText(name, textX, textY);
