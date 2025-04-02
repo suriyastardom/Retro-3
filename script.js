@@ -34,7 +34,6 @@ function drawImage(name = "YOUR NAME") {
     ctx.font = "85px CustomFont"; // Use custom font
     ctx.fillStyle = "#FFE4B2";
     ctx.textAlign = "center";
-    ctx.lineWidth = 5;
 
     // 3. Position text (centered with 0.5cm gap from top)
     const gapInPixels = (2.0 / 2.5) * 96;  // Convert 0.5 cm to pixels (≈19px)
