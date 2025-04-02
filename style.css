@@ -18,9 +18,11 @@ body {
 
 /* Hero Section with Background Image */
 .hero-section {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('background.jpg') no-repeat center center/cover; /* Use the same background as the poster */
     padding: 40px 20px;
 }
@@ -39,9 +41,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    max-width: 100%;
-    width: 100%;
-    overflow: hidden;
+    max-width: 1200px;
     padding: 20px;
 }
 
@@ -138,9 +138,7 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
-    max-width: 1500px;
-    height: auto;
-    object-fit: cover;
+    max-width: 1000px;
 }
 
 /* Download Button Styling */
@@ -217,9 +215,8 @@ h2 {
     }
 
     .canvas {
-        width: 100vw; /* Full width canvas on mobile */
-        height: auto;
-        oject-fit: contain;
+        width: 100%; /* Full width canvas on mobile */
+        max-width: 500px; /* Limit max width for better fit */
     }
 
     #downloadBtn {
