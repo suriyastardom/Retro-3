@@ -34,8 +34,8 @@ function drawImage(name = "YOUR NAME") {
 
     // Scale down the canvas for smaller screens
     if (screenWidth < 768) {
-        canvasWidth = 960; // Half the original width for mobile
-        canvasHeight = 540; // Half the original height for mobile
+        canvasWidth = 1500; // Half the original width for mobile
+        canvasHeight = 500; // Half the original height for mobile
     }
 
     canvas.width = canvasWidth;
