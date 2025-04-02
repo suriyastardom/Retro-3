@@ -31,7 +31,12 @@ function drawImage(name = "YOUR NAME") {
     const screenWidth = window.innerWidth;
     let canvasWidth = 1500;
     let canvasHeight = 500
-}
+
+    // Scale down the canvas for smaller screens
+    if (screenWidth < 768) {
+        canvasWidth = 960; // Half the original width for mobile
+        canvasHeight = 540; // Half the original height for mobile
+    }
 
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
@@ -42,12 +47,12 @@ function drawImage(name = "YOUR NAME") {
     // 2. Set up text properties (scale font size for mobile)
     const fontSize = screenWidth < 768 ? 80 : 120; // Smaller font for mobile
     ctx.font = `${fontSize}px CustomFont`; // Use custom font
-    ctx.fillStyle = "#FFE2B2";
+    ctx.fillStyle = "#D6D0AC";
     ctx.textAlign = "center";
-    ctx.strokeStyle = "#FFE2B2";
+    ctx.strokeStyle = "#D6D0AC";
     ctx.lineWidth = screenWidth < 768 ? 3 : 5; // Smaller outline for mobile
 
-    // 3. Position text (centered with 0.3cm gap from top)
+    // 3. Position text (centered with 0.5cm gap from top)
     const gapInPixels = (2.0 / 2.5) * 85;  // Convert 0.5 cm to pixels (≈19px)
     const textX = canvas.width / 2;
     const textY = gapInPixels + fontSize; // Adjust based on font size
@@ -78,7 +83,7 @@ function generateImage() {
 // Download Image
 function downloadImage() {
     const link = document.createElement("a");
-    link.download = "suriya-stardom-coverpic.jpg";
+    link.download = "suriya-stardom-poster.jpg";
     link.href = canvas.toDataURL("image/jpeg");
     link.click();
 }
