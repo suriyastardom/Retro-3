@@ -216,7 +216,7 @@ h2 {
 
     .canvas {
         width: 100%; /* Full width canvas on mobile */
-        max-width: 500px; /* Limit max width for better fit */
+        max-width: 1500px; /* Limit max width for better fit */
     }
 
     #downloadBtn {
