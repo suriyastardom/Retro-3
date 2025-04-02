@@ -24,8 +24,8 @@ background.onload = person.onload = function() {
 };
 
 function drawImage(name = "YOUR NAME") {
-    canvas.width = 1920;
-    canvas.height = 1080;
+    canvas.width = 1500;
+    canvas.height = 500;
 
     // 1. Draw Background
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
