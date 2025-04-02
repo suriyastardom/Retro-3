@@ -137,8 +137,10 @@ h2 {
     border: 3px solid #D6D0AC;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 1500px;
+    width: 1500px;
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 /* Download Button Styling */
