@@ -32,9 +32,9 @@ function drawImage(name = "YOUR NAME") {
 
     // 2. Set up text properties
     ctx.font = "85px CustomFont"; // Use custom font
-    ctx.fillStyle = "#D6D0AC";
+    ctx.fillStyle = "##FFE4B2";
     ctx.textAlign = "center";
-    ctx.strokeStyle = "#D6D0AC";
+    ctx.strokeStyle = "##FFE4B2";
     ctx.lineWidth = 5;
 
     // 3. Position text (centered with 0.5cm gap from top)
