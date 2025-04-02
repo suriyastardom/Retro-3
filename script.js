@@ -40,7 +40,7 @@ function drawImage(name = "YOUR NAME") {
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
     // 3. Position text (centered with 0.5cm gap from top)
-    const gapInPixels = (2.0 / 2.5) * 85;  // Convert 0.5 cm to pixels (≈19px)
+    const gapInPixels = (2.0 / 2.5) * 90;  // Convert 0.5 cm to pixels (≈19px)
     const textX = canvas.width / 2;
     const textY = gapInPixels + fontSize; // Adjust based on font size
 
