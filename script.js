@@ -31,26 +31,13 @@ function drawImage(name = "YOUR NAME") {
     const screenWidth = window.innerWidth;
     let canvasWidth = 1500;
     let canvasHeight = 500
-
-    // Scale down the canvas for smaller screens
-    if (screenWidth < 768) {
-        canvasWidth = 1500; // Half the original width for mobile
-        canvasHeight = 500; // Half the original height for mobile
-    }
+}
 
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
 
     // 1. Draw Background
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-
-    // 2. Set up text properties (scale font size for mobile)
-    const fontSize = screenWidth < 768 ? 80 : 120; // Smaller font for mobile
-    ctx.font = `${fontSize}px CustomFont`; // Use custom font
-    ctx.fillStyle = "#D6D0AC";
-    ctx.textAlign = "center";
-    ctx.strokeStyle = "#D6D0AC";
-    ctx.lineWidth = screenWidth < 768 ? 3 : 5; // Smaller outline for mobile
 
     // 3. Position text (centered with 0.5cm gap from top)
     const gapInPixels = (2.0 / 2.5) * 85;  // Convert 0.5 cm to pixels (≈19px)
