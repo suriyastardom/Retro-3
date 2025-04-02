@@ -48,27 +48,27 @@ body {
 /* Title Animation */
 h1.animate-title {
     font-size: 4rem;
-    color: #D6D0AC;
+    color: #FFE4B2;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     animation: fadeInDown 1.5s ease-in-out;
 }
 
 hr {
     margin: 20px auto;
-    border: 1px solid #D6D0AC;
+    border: 1px solid #FFE4B2;
 }
 
 .intro-text {
     font-size: 1.5rem;
     margin: 20px 0;
-    color: #D6D0AC;
+    color: #FFE4B2;
     animation: fadeIn 2s ease-in-out;
 }
 
 h2 {
     font-size: 2rem;
     margin: 30px 0 10px;
-    color: #D6D0AC;
+    color: #FFE4B2;
 }
 
 /* Input and Button Styling */
@@ -134,7 +134,7 @@ h2 {
 .canvas {
     display: block;
     margin: 30px auto;
-    border: 3px solid #D6D0AC;
+    border: 3px solid #FFE4B2;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
